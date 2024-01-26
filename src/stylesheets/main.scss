@@ -1,4 +1,10 @@
 // Your styles go here
+body {
+    width: 80%;
+    margin: 0 auto 1rem;
+    text-align: center;
+}
+
 html {
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -25,8 +31,8 @@ header::after {
 
 // nav styling
 nav {
-    border: 1px solid #453f85;
     padding: .5rem;
+    background-color: rgb(235, 230, 230);
 }
 nav > ul {
     list-style: none;
@@ -43,7 +49,7 @@ nav > ul > li {
 
 // nav link styling
 nav a:link, nav a:visited, nav a:active {
-    background-color: #453f85;
+    background-color: #8e8989;
     color: #fff;
     display: inline-block;
     padding: .5rem;
@@ -53,7 +59,57 @@ nav a:link, nav a:visited, nav a:active {
 }
 
 nav a:hover {
-    background-color: #ac90c6;
+    background-color: #cecece;
+    color: #000000;
+}
+
+div {
+    flex: 1;
+}
+// main styling
+.blog > .post {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+.blog {
+    display: flex;
+    padding: .5rem;
+    border-radius: 1rem;
+    flex-flow: column nowrap;
+}
+
+img {
+    width: 60%;
+    height: 20%;
+    border-radius: .5rem;
+}
+// page section styling
+.page-selection > ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.page-selection > ul > li {
+    display: inline-block;
+    margin: 0;
+    margin-right: .5rem;
+}
+.page-selection a:link, .page-selection a:visited, .page-selection a:active {
+    background-color: #8e8989;
+    color: #fff;
+    display: inline-block;
+    padding: .5rem;
+    text-decoration: none;
+    text-transform: uppercase;
+    border-radius: 8px;
+}
+
+.page-selection a:hover {
+    background-color: #cecece;
+    color: #000000;
 }
 
 // footer styling
@@ -64,7 +120,12 @@ nav a:hover {
 .rights {
     float: right;
 }
-
+footer {
+    margin: 2rem .5rem;
+    padding: .5rem;
+    border-top: solid;
+    
+}
 footer > ul {
     list-style: none;
     margin: 0;
